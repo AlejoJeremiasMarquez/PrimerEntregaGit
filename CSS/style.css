@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    /* background-image: url(../Imagenes/Canon.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover; */
+}
+
+.gridContenedorIndex{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.hijoUnoIndex{
+    grid-area: 1 / 1 / 2 / 6;
+}
+.hijoDosIndex{
+    grid-area: 2 / 1 / 7 / 6;
+}
+.hijoDosIndex main{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%);
+    height: 100%;
+}
+.hijoDosIndex section{
+    height: 100vh;
+}
+.hijoDosIndex pre{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.padreFlex{
+    display: flex;
+}
+.padreFlex img{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+.hijoDosIndex, .jobs{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%);
+    height: 100%;
+}
+pre{
+    margin: 12rem;
+}
+pre:hover{
+    font-size: 45px;
+    transition: .5s;
+}
+pre a:hover{
+    color: aqua;
+}
+.hijoTresIndex{
+    grid-area: 7 / 1 / 8 / 6;
+}
+.hijoTresIndex p{
+    margin-top: 45px;
+}
+
+.padre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    height: 5rem;
+    margin: 0;
+    display: flex;
+}
+.logo:hover{
+    background-color: rgb(56, 56, 56);
+    border-radius: 100%;
+    transition: .3s;
+}
+.logo:not(hover){
+    height: 5.0rem;
+    transition: .3s;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: white;
+}
+.linkNav:hover{
+    color: aqua;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+.linkNav:not(hover){
+    transition: .3s;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.redesSociales{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facebook{
+    color: blue;
+    margin: 0% 20%;
+    font-size: 1.5rem;
+}
+.facebook:hover{
+    color: rgb(0, 119, 255);
+    font-size: 1.7rem;
+    transition: .3s;
+}
+.facebook:not(hover){
+    transition: .3s;
+}
+
+.instagram{
+    color: deeppink;
+    margin: 0% 20%;
+    font-size: 1.5rem;
+}
+.instagram:hover{
+    color: rgb(255, 0, 170);
+    font-size: 1.7rem;
+    transition: .3s;
+}
+.instagram:not(hover){
+    transition: .3s;
+}
+.whatsapp{
+    color: greenyellow;
+    margin: 0% 20%;
+    font-size: 1.5rem;
+}
+.whatsapp:hover{
+    color: rgb(183, 253, 77);
+    font-size: 1.7rem;
+    transition: .3s;
+}
+.whatsapp:not(hover){
+    transition: .3s;
+}
+
+
+main{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.nombre{
+    font-size: 50px;
+}
+
+
+h2{
+    font-size: 30px;
+    /* margin-top:50px; */
+}
+
+h3{
+    font-size: 20px;
+}
+
+.hijoDosIndex section{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%);
+    height: 40vh;
+    padding: 8% 30%;
+}
+.hijoDosIndex section:hover{
+    color: rgb(183, 255, 255);
+    transition: 1s;
+}
+
+.citas{
+    font-style: italic;
+    font-size: 16px;
+    color: black;
+    margin: 50px 0px 0px 5px;
+}
+
+.nombres{
+    margin-bottom: 50px;
+    color: gray;
+}
+
+.showreel{
+    margin: 10px;
+}
+
+form{
+    margin: 50px;
+}
+
+label{
+    font-size: 20px;
+    margin: 0px 500px;
+    text-align: center;
+}
+
+input{
+    width: 30%;
+    padding: 5px 10px;
+    margin: 1.5% 10%;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#enviar{
+    padding: 3px;
+}
+
+video{
+    width: 30%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+video:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition: .5s;
+}
+video:not(hover){
+    transition: .5s;
+}
+
+.hijoDosIndex video:hover{
+    -webkit-transform:scale(.9);
+    transform:scale(.98);
+}
+
+.showreel{
+    width: 70%;
+    height: auto;
+}
+
+footer{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    /* margin-top: 20px;
+    padding: 5px; */
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width:1100px) { 
+    label{
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+    }
+}
+@media all and (max-width:600px) { 
+    .hijoDosIndex pre{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .aboutMe{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%);
+        height: 100vh;
+    }
+    .aboutMe h2{
+        font-size: 20px;
+    }
+    .aboutMe h3{
+        font-size: 15px;
+    }
+    .aboutMe p{
+        font-size: 15px;
+    }
+    label{
+        font-size: 15px;
+        margin: 0px;
+        text-align: center;
+    }
+}
+@media all and (max-width:450px) {
+    .linkNav{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
