@@ -40,7 +40,21 @@ body{
 }
 .padreFlex{
     display: flex;
+    animation: padreFlex 2s ease 1s infinite normal backwards;
 }
+@keyframes padreFlex {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 .padreFlex img{
     width: 50%;
     height: auto;
